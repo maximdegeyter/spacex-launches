@@ -1,5 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+
+import { Footer } from '../components/footer';
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
@@ -10,8 +13,9 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body className="bg-sky-50 px-4">
+        <body className="bg-sky-50">
           <Main />
+          <Footer />
           <NextScript />
         </body>
       </Html>

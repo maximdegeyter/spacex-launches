@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { gql } from '@apollo/client'
 
 import client from './api/spacex-api'
-import { Launch } from '../components/Launch';
+import { Launch } from '../components/launch';
 
 export default function Home({ launches }) {
   console.log(launches);
@@ -20,7 +20,7 @@ export default function Home({ launches }) {
         </h1>
       </header>
       <main>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12">
           {launches.map(launch => {
             return (
               <Launch key={launch.id} launch={launch} />
