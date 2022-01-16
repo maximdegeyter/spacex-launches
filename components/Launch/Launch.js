@@ -40,7 +40,7 @@ export default function Launch({ launch }) {
     </div>
     <div className="flex justify-between justify-self-end text-sm m-4">
       <p className="text-gray-500"> {new Date(launch.launch_date_local).toLocaleDateString('en-US', options)}</p>
-      <a className="text-blue-700 font-bold hover:underline" href={launch.links.video_link} target="_blank">Watch it &gt;</a>
+      <a className="text-blue-700 font-bold hover:underline" href={launch.links.video_link} target="_blank" rel="noreferrer">Watch it &gt;</a>
     </div>
     </div>
   )
