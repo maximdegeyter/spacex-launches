@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { gql } from '@apollo/client'
 
 import client from './api/spacex-api'
-import { Launch } from '../components/launch';
+import { Launch } from '../components/Launch';
 
 export default function Home({ launches }) {
   console.log(launches);
